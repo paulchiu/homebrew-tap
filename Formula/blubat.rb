@@ -1,15 +1,15 @@
 class Blubat < Formula
   desc "Bluetooth battery monitor for macOS: one-shot CLI readings, JSON output and a live TUI"
   homepage "https://github.com/paulchiu/blubat"
-  version "0.12.0"
+  version "0.13.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paulchiu/blubat/releases/download/v0.12.0/blubat-aarch64-apple-darwin.tar.xz"
-      sha256 "e62d3d0c254ea0f4db89887a16f0613c901ab726223f20e7bd24b3282be6033e"
+      url "https://github.com/paulchiu/blubat/releases/download/v0.13.0/blubat-aarch64-apple-darwin.tar.xz"
+      sha256 "134f6afefefe6ad2744c01cf3a347681dcc2729d896ae2ab6bd9a29220808385"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paulchiu/blubat/releases/download/v0.12.0/blubat-x86_64-apple-darwin.tar.xz"
-      sha256 "27678df271d2bb4fb0b442bb2ad6a624c6f3efb0ce7dfbefdd81751905c8e425"
+      url "https://github.com/paulchiu/blubat/releases/download/v0.13.0/blubat-x86_64-apple-darwin.tar.xz"
+      sha256 "ac57a5da9a8ca2bd31e2d7d97b407d28bddaf9dc4a9fb40f52446b56d1adbdfa"
     end
   end
   license "MIT"
@@ -35,8 +35,12 @@ class Blubat < Formula
   end
 
   def install
-    bin.install "blubat" if OS.mac? && Hardware::CPU.arm?
-    bin.install "blubat" if OS.mac? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "blubat"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "blubat"
+    end
 
     install_binary_aliases!
 
