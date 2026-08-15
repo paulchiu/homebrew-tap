@@ -1,15 +1,15 @@
 class Blubat < Formula
   desc "Bluetooth battery monitor for macOS: one-shot CLI readings, JSON output and a live TUI"
   homepage "https://github.com/paulchiu/blubat"
-  version "0.14.2"
+  version "0.15.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paulchiu/blubat/releases/download/v0.14.2/blubat-aarch64-apple-darwin.tar.xz"
-      sha256 "ffbce01db31d541e68ba924568a05402294cb05cd2f0bc118e48ec9ec8b0f2c4"
+      url "https://github.com/paulchiu/blubat/releases/download/v0.15.0/blubat-aarch64-apple-darwin.tar.xz"
+      sha256 "456aaafe9b3da635b07ebdce276e63871f4c71e4abdda5ee19431aef17c633ea"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paulchiu/blubat/releases/download/v0.14.2/blubat-x86_64-apple-darwin.tar.xz"
-      sha256 "b8dd2f5206a6c7466d91dae62d6420a024d0972d868facf28c5bbf7c3447955b"
+      url "https://github.com/paulchiu/blubat/releases/download/v0.15.0/blubat-x86_64-apple-darwin.tar.xz"
+      sha256 "6d6a6da7f39e45642d47daf94ff2d86b0929f8d39f46760665b9a08aec1a2f23"
     end
   end
   license "MIT"
