@@ -1,20 +1,20 @@
 class Repon < Formula
   desc "A terminal UI for the outer loop: seeing many git repos at once and acting on many in one gesture"
   homepage "https://github.com/paulchiu/repon"
-  version "0.29.2"
+  version "0.29.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paulchiu/repon/releases/download/v0.29.2/repon-aarch64-apple-darwin.tar.xz"
-      sha256 "42435f63eb4c12cc2ab9eb835322e405d6eaf15ac55aa28b8054eff2f4bd6477"
+      url "https://github.com/paulchiu/repon/releases/download/v0.29.3/repon-aarch64-apple-darwin.tar.xz"
+      sha256 "c94e9b16b602585c18850c7e922f37eaad0c466ea0d6cc8443fa2e13da3436ab"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paulchiu/repon/releases/download/v0.29.2/repon-x86_64-apple-darwin.tar.xz"
-      sha256 "7276baa1c914086ee3ab0bcd31ce7fcb420881077a30cc569c352f7fee2ec237"
+      url "https://github.com/paulchiu/repon/releases/download/v0.29.3/repon-x86_64-apple-darwin.tar.xz"
+      sha256 "abc4a0753da1e6efedf140db1b7f751fb4cbd877e8f4f22d2d212f5b1a752f3c"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/paulchiu/repon/releases/download/v0.29.2/repon-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "5439ac24a09d3f9c2c7be04c8a768be0e5e256a04c56a61eac8978d76cc17d4a"
+    url "https://github.com/paulchiu/repon/releases/download/v0.29.3/repon-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "f0cf979022953109bb227da871469f9992c1dd266373eb7e29c29f6dd747d478"
   end
   license "MIT"
 
