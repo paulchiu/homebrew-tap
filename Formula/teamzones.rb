@@ -1,20 +1,20 @@
 class Teamzones < Formula
   desc "Who's available and where it's busy, on one time axis. A Rust TUI."
   homepage "https://github.com/paulchiu/teamzones-tui"
-  version "0.14.0"
+  version "0.15.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paulchiu/teamzones-tui/releases/download/v0.14.0/teamzones-aarch64-apple-darwin.tar.xz"
-      sha256 "74667fd2d2867dbd0a8e31155b8296fe35051a47d78e509219c82a533e8c5804"
+      url "https://github.com/paulchiu/teamzones-tui/releases/download/v0.15.0/teamzones-aarch64-apple-darwin.tar.xz"
+      sha256 "2e2e6ebe52d58ebecdb7e5850e346f4a056963d7876eb179b5976c9d18323bfb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paulchiu/teamzones-tui/releases/download/v0.14.0/teamzones-x86_64-apple-darwin.tar.xz"
-      sha256 "3f1be7a7c1a77cdb18c9e472677a229cbd4604584b31c0768cff5a5eb03389ed"
+      url "https://github.com/paulchiu/teamzones-tui/releases/download/v0.15.0/teamzones-x86_64-apple-darwin.tar.xz"
+      sha256 "344b1757d1e1dc456177d7b4825925b8a86cd8e15482d757843436836399db24"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/paulchiu/teamzones-tui/releases/download/v0.14.0/teamzones-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "0197c5d459062c90d426d3e8def880dafa3fe79113c15d98eeccc9286f949260"
+    url "https://github.com/paulchiu/teamzones-tui/releases/download/v0.15.0/teamzones-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "5b0c702526306a271906b0fb32062622aec025e4296e46f9b8930ba293e44999"
   end
   license "MIT"
 
